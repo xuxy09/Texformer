@@ -45,3 +45,9 @@ The Query is a pre-computed color encoding of the UV space obtained by mapping t
 ## References
 [1] "Learning Spatial and Spatio-Temporal Pixel Aggregations for Image and Video Denoising", IEEE Transactions on Image Processing, 2020.
 
+[2] "3D Human Pose, Shape and Texture from Low-Resolution Images and Videos", IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021.
+
+[3] "3D Human Shape and Pose from a Single Low-Resolution Image with Self-Supervised Learning", ECCV 2020
+
+[4] "Learning Factorized Weight Matrix for Joint Filtering", ICML 2020
+
