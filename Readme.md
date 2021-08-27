@@ -33,21 +33,49 @@ The Query is a pre-computed color encoding of the UV space obtained by mapping t
 ## Install
 
 
-## Demo
+## Download
+* Download [meta data](), and put it in "./meta/".
 
+* Download [pretrained model](), and put it in "./pretrained".
+
+* We propose an enhanced Market-1501 dataset, termed as SMPLMarket, by equipping the original data with SMPL estimation from [RSC-Net]() and body part segmentation estimated by [EANet](). 
+Please download the [SMPLMarket]() dataset and put it in "./datasets/". 
+
+* Other datasets: [PRW](), [surreal](), [CUHK-SYSU]().
+Please put these datasets in "./datasets/".
+
+* All the paths are set in "config.py".
+
+## Demo
+Use the human part segmentation from an off-the-shelf model:
+```
+python demo.py --img_path demo_imgs/test1_img.png --seg_path demo_imgs/test1_seg.png
+```
+
+If you don't want to run an external model for human part segmentation, you can use the human part segmentation of RSC-Net instead:
+```
+python demo.py --img_path demo_imgs/test1_img.png
+```
 
 ## Train
-
+Run the training code with default settings:
+```
+python trainer.py --exp_name texformer
+```
 
 ## Evaluation
+Run the evaluation on the SPMLMarket dataset:
+```
+python eval.py --checkpoint_path ./pretrained/texformer_ep500.pt
+```
 
 
 ## References
-[1] "Learning Spatial and Spatio-Temporal Pixel Aggregations for Image and Video Denoising", IEEE Transactions on Image Processing, 2020.
+[1] ["3D Human Pose, Shape and Texture from Low-Resolution Images and Videos", IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021.](https://arxiv.org/abs/2103.06498)
 
-[2] "3D Human Pose, Shape and Texture from Low-Resolution Images and Videos", IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021.
+[2] ["3D Human Shape and Pose from a Single Low-Resolution Image with Self-Supervised Learning", ECCV 2020](https://arxiv.org/abs/2007.13666)
 
-[3] "3D Human Shape and Pose from a Single Low-Resolution Image with Self-Supervised Learning", ECCV 2020
+[3] ["Learning Spatial and Spatio-Temporal Pixel Aggregations for Image and Video Denoising", IEEE Transactions on Image Processing, 2020.](https://arxiv.org/abs/2101.10760)
 
-[4] "Learning Factorized Weight Matrix for Joint Filtering", ICML 2020
+[4] ["Learning Factorized Weight Matrix for Joint Filtering", ICML 2020](http://proceedings.mlr.press/v119/xu20f.html)
 
