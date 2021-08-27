@@ -13,7 +13,7 @@ This is the official implementation of ["3D Human Texture Estimation from a Sing
 ## BibTeX
 ```
 @inproceedings{xu2021texformer,
-  title={3D Human Texture Estimation from a Single Image with Transformers},
+  title={{3D} Human Texture Estimation from a Single Image with Transformers},
   author={Xu, Xiangyu and Loy, Chen Change},
   booktitle={Proceedings of the IEEE International Conference on Computer Vision},
   year={2021}
@@ -52,7 +52,7 @@ Run the model with human part segmentation from an off-the-shelf model:
 python demo.py --img_path demo_imgs/test1_img.png --seg_path demo_imgs/test1_seg.png
 ```
 
-If you don't want to run an external model for human part segmentation, you can use the human part segmentation of RSC-Net instead:
+If you don't want to run an external model for human part segmentation, you can use the human part segmentation of RSC-Net instead (note that this may affect the performance as the segmentation of RSC-Net is not very accurate due to the limitation of the SMPL model):
 ```
 python demo.py --img_path demo_imgs/test1_img.png
 ```
@@ -73,9 +73,11 @@ python eval.py --checkpoint_path ./pretrained/texformer_ep500.pt
 ## References
 [1] ["3D Human Pose, Shape and Texture from Low-Resolution Images and Videos", IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021.](https://arxiv.org/abs/2103.06498)
 
-[2] ["3D Human Shape and Pose from a Single Low-Resolution Image with Self-Supervised Learning", ECCV 2020](https://arxiv.org/abs/2007.13666)
+[2] ["3D Human Shape and Pose from a Single Low-Resolution Image with Self-Supervised Learning", ECCV, 2020](https://arxiv.org/abs/2007.13666)
 
-[3] ["Learning Spatial and Spatio-Temporal Pixel Aggregations for Image and Video Denoising", IEEE Transactions on Image Processing, 2020.](https://arxiv.org/abs/2101.10760)
+[3] ["SMPL: A Skinned Multi-Person Linear Model", SIGGRAPH Asia, 2015](https://files.is.tue.mpg.de/black/papers/SMPL2015.pdf)
 
-[4] ["Learning Factorized Weight Matrix for Joint Filtering", ICML 2020](http://proceedings.mlr.press/v119/xu20f.html)
+[4] ["Learning Spatial and Spatio-Temporal Pixel Aggregations for Image and Video Denoising", IEEE Transactions on Image Processing, 2020.](https://arxiv.org/abs/2101.10760)
+
+[5] ["Learning Factorized Weight Matrix for Joint Filtering", ICML, 2020](http://proceedings.mlr.press/v119/xu20f.html)
 
