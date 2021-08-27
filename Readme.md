@@ -47,7 +47,7 @@ Please put these datasets in "./datasets/".
 * All the paths are set in "config.py".
 
 ## Demo
-Use the human part segmentation from an off-the-shelf model:
+Run the model with human part segmentation from an off-the-shelf model:
 ```
 python demo.py --img_path demo_imgs/test1_img.png --seg_path demo_imgs/test1_seg.png
 ```
