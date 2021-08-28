@@ -47,12 +47,12 @@ Please put these datasets in "./datasets/".
 * All the paths are set in "config.py".
 
 ## Demo
-Run the model with human part segmentation from an off-the-shelf model:
+Run the Texformer with human part segmentation from an off-the-shelf model:
 ```
 python demo.py --img_path demo_imgs/test1_img.png --seg_path demo_imgs/test1_seg.png
 ```
 
-If you don't want to run an external model for human part segmentation, you can use the human part segmentation of RSC-Net instead (note that this may affect the performance as the segmentation of RSC-Net is not very accurate due to the limitation of the SMPL model):
+If you don't want to run an external model for human part segmentation, you can use the human part segmentation of RSC-Net instead (note that this may affect the performance as the segmentation of RSC-Net is not very accurate due to the limitation of SMPL):
 ```
 python demo.py --img_path demo_imgs/test1_img.png
 ```
@@ -64,7 +64,7 @@ python trainer.py --exp_name texformer
 ```
 
 ## Evaluation
-Run the evaluation on the SPMLMarket dataset:
+Run the evaluation on the [SPMLMarket]() dataset:
 ```
 python eval.py --checkpoint_path ./pretrained/texformer_ep500.pt
 ```
