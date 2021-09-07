@@ -1,5 +1,5 @@
 # Texformer: 3D Human Texture Estimation from a Single Image with Transformers
-This is the official implementation of ["3D Human Texture Estimation from a Single Image with Transformers", ICCV 2021 (Oral)]()
+This is the official implementation of ["3D Human Texture Estimation from a Single Image with Transformers", ICCV 2021 (Oral)](http://arxiv.org/abs/2109.02563)
 
 
 ## Highlights
