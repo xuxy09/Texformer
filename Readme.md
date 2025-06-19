@@ -52,9 +52,9 @@ conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=9.2 -c pytorch
 * Install Pytorch-neural-renderer according to the instructions [here](https://github.com/daniilidis-group/neural_renderer.git)
 
 ## Download
-* Download [meta data](https://xjtueducn-my.sharepoint.com/:u:/g/personal/xiangyu_xu_xjtu_edu_cn/EVSmZFNI5opLv23SdbmVe1oB_vuWFNd3mpvrPhyQsm85Jg?e=EQIYR8), and put it in "./meta/".
+* Download [meta data](https://share.weiyun.com/sIKleCyb), and put it in "./meta/".
 
-* Download [pretrained model](https://xjtueducn-my.sharepoint.com/:u:/g/personal/xiangyu_xu_xjtu_edu_cn/EefIiggmoTdNmW416mXhQUYBuPxisztjzhi_otm6cFALGg?e=Pp7J7J), and put it in "./pretrained".
+* Download [pretrained model](https://share.weiyun.com/MlGBWMl5), and put it in "./pretrained".
 
 * We propose an enhanced Market-1501 dataset, termed as SMPLMarket, by equipping the original data of Market-1501 with SMPL estimation from [RSC-Net](https://github.com/xuxy09/RSC-Net) and body part segmentation estimated by [EANet](https://github.com/huanghoujing/EANet). 
 Please download the [SMPLMarket](https://sites.google.com/view/xiangyuxu/texformer) dataset and put it in "./datasets/". 
